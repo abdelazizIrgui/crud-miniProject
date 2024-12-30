@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #222;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 100vh;
+}
+.header1{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(white,rgba(150, 151, 157, 0.422));
+    
+}
+.header1 img{
+    width: 70px;
+    margin-left: 30px;
+    color: red;
+}
+.lists ul{
+    display: flex;
+    margin-right:130px;
+    gap: 90px;
+    
+}
+.header1 .lists ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 900;
+    color: white;
+    letter-spacing: 5px;
+    transition: .1s;
+}
+.header1 .lists ul li a:hover{
+    border-bottom: 3px solid red;
+}
+.header1 .lists ul li{
+    list-style-type: none;
+}
+
+.crud{
+    width: 80%;
+    margin: auto;
+}
+.head{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+input{
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    background: #111;
+    margin: 4px 0;
+    border-radius: 5px;
+    padding: 4px ;
+    color: white;
+}
+input:focus{
+    background: #000;
+    transform: scale(1.1);
+}
+.price input{
+    width: 20%;
+    
+}
+#total{
+    background-color: red;
+    padding: 5px 2px;
+    border-radius: 4px;
+}
+#total::before{
+    content:"Total: ";
+}
+#total::after{
+    content:" $";
+}
+button{
+    width: 100%;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: 0.5s;
+
+}
+button:hover{
+    background-color: green;
+    color: white;
+    letter-spacing: 1px;
+}
+.btnSearch{
+    display: flex;
+    justify-content: space-between;
+}
+.btnSearch button{
+    width: 45%;
+}
+table{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+table th{
+    text-transform: capitalize;
+
+}
+th,td{
+    padding: 5px;
+    border: .5px solid rgba(255, 255, 255, 0.42);
+
+}
+#deleteAll{
+    margin: 20px 0;
+    
+}
+
+
+@media(max-width:600px){
+    .header1{
+        overflow-x: hidden;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        gap: 20px;
+        background-image: linear-gradient(white,rgba(141, 142, 144, 0.422));
+        
+    }  
+    .header1 img{
+    width: 40px;
+    margin-left: 15px;
+    color: red;
+}
+.lists ul{
+    display: flex;
+    margin-right:30px;
+    gap: 70px;
+    
+}
+.header1 .lists ul li a{
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 900;
+    color: white;
+    transition: .1s;
+}
+
+.tab{
+    display: block;
+    margin-left: -35px;
+    width: 60%;
+}
+table th{
+    text-transform: capitalize;
+    font-size: 8px;
+
+}
+
+.crud{
+    width: 70%;
+    margin: auto;
+}
+
+th,td{
+    padding: 3px;
+    border: .5px solid rgba(255, 255, 255, 0.42);
+
+}
+#total{
+    background-color: red;
+    padding: 2px 0px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+
+}
+
+
+@media(max-width:400px){
+    
+    .header1{
+        overflow-x: hidden;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        gap: 15px;
+        background-image: linear-gradient(rgb(151, 20, 20),rgba(141, 142, 144, 0.422));
+        
+    }  
+    .header1 img{
+    width: 25px;
+    margin-left: 15px;
+}
+.lists ul{
+    display: flex;
+    margin-right:30px;
+    gap: 30px;
+    
+}
+.header1 .lists ul li a{
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 900;
+    color: white;
+}
+.crud{
+    width: 60%;
+    margin: auto;
+}
+.tab{
+    display: block;
+    margin-left: -55px;
+    width: 60%;
+}
+table th{
+    text-transform: capitalize;
+    font-size: 8px;
+
+}
+th,td{
+    font-size: 17px;
+    padding: 3px;
+    border: .5px solid rgba(255, 255, 255, 0.42);
+}
+#total{
+    background-color: red;
+    padding: 2px 0px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+
+}
+
+@media(min-width:539px)and (max-width:760px){
+    .tab{
+        display: block;
+    }
+    table th{
+        text-transform: capitalize;
+        font-size: 14px;
+    
+    }
+}
